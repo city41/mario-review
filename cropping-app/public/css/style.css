@@ -1,0 +1,188 @@
+.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+
+body, html {
+    background-color: #CEEDD2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro-container {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.intro-container .logo {
+    margin-bottom: 30px;
+}
+
+.intro-container h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.intro-container h1 img {
+    margin-right: 10px;
+}
+
+.intro-container .tag-line {
+    color: #64B06D;
+    font-size: 14px;
+}
+
+.intro-container a {
+    color: #64B06D;
+    text-decoration: underline;
+}
+
+.file-chooser::-webkit-file-upload-button {
+    display: none;
+}
+
+
+.file-chooser:before {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  text-align: center;
+  width: 304px;
+}
+
+.file-chooser:hover:before {
+  border-color: black;
+}
+.file-chooser:active:before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+input[type="file"].file-chooser {
+    outline: none;
+    margin-right: 5px;
+    width: 304px;
+}
+
+.file-chooser:before {
+  content: 'Select different ZSNES file';
+}
+
+.file-chooser.intro:before {
+  content: 'Select a ZSNES RAW file to begin';
+}
+
+canvas {
+  border: 1px solid white;
+  image-rendering: optimizeSpeed;             
+  image-rendering: -moz-crisp-edges;          
+  image-rendering: -webkit-optimize-contrast; 
+
+  image-rendering: -o-crisp-edges;            
+  image-rendering: optimize-contrast;        
+  -ms-interpolation-mode: nearest-neighbor; 
+}
+
+.loading-container {
+  padding: 5px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 20px;
+  width: 256px;
+}
+
+.canvas-container {
+  position: relative;
+  margin: 5px;
+  width: 100%;
+}
+
+.canvas-container canvas {
+  position: absolute;
+  top: 0;
+}
+
+.rectangle-selection {
+  z-index: 100;
+}
+
+.current-file {
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding-left: 35px;
+}
+
+.progress, .progress-column {
+    padding: 0;
+    height: 30px;
+    border: 0;
+}
+
+.logo-small {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/logo.svg);
+    background-size: 30px 30px;
+}
+
+.controls-container {
+    width: 100%;
+    text-align: center;
+}
+
+.tabs-content {
+    width: 100%;
+    height: 100%;
+    background-color: #9BC9A1;
+}
+
+#client-target .tabs .tab-title.active a, #client-target .tabs .tab-title.active a:hover {
+    background-color: #9BC9A1;
+    color: white;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tab-title {
+    width: 14.28%;
+    text-align: center;
+}
+
+#client-target .tabs .tab-title a {
+    color: #9A9A9A;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#client-target .tabs .tab-title a:hover {
+    color: black;
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.crop-view {
+    margin-top: 20px
+}
