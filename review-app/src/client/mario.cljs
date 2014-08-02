@@ -95,7 +95,7 @@
                           :video-src "video/koopa-troopas"
                           :width 316
                           :height 236
-                          :description "Probably the most common enemy in the game and in the Mario series as a whole. Koopa Troopas have really grown in variety and personality in Super Mario World."}
+                          :description "Probably the most common enemy in the game and in the Mario series as a whole. Koopa Troopas have really grown in variety and personality in Super Mario World. So much so we gave them their own section below."}
                          {:name "Dino-Rhino"
                           :thumb "img/dino-rhino.png"
                           :flipped true
@@ -149,6 +149,50 @@
                           :width 372
                           :height 392
                           :description "The biggest troll in Super Mario World. Fishing Lakitu is a great enemy because he really creates an interesting dynamic in the Forest of Illusion 4 level. Best to not take his bait."}
+                         ]})
+
+;; KOOPAS
+(def koopas {:type-name "koopa"
+              :plural "koopas"
+              :entities [
+
+                         {:name "Climbing Koopas"
+                          :thumb "img/koopa-on-fence.png"
+                          :video-src "video/koopas-on-fence"
+                          :width 312
+                          :height 184
+                          :description "In many of the castles Koopas can be seen climbing around on fences. Mario can get on the opposite side of the fence and punch them off."}
+
+                         {:name "Flying Koopas"
+                          :thumb "img/flying-koopa.png"
+                          :flipped true
+                          :video-src "video/flying-koopas"
+                          :width 356
+                          :height 296
+                          :description "These guys can be a real pain later in the game, but the flashing red ones give you a feather!"}
+                         
+                         {:name "Koopa Troopa"
+                          :thumb "img/koopa.png"
+                          :flipped true
+                          :video-src "video/koopa-troopas"
+                          :width 316
+                          :height 236
+                          :description "Probably the most common enemy in the game and in the Mario series as a whole. Koopa Troopas have really grown in variety and personality in Super Mario World. So much so we gave them their own section below."}
+                         {:name "Dino-Rhino"
+                          :thumb "img/dino-rhino.png"
+                          :flipped true
+                          :video-src "video/dino-rhino"
+                          :width 280
+                          :height 240
+                          :description "Dino-Rhino is lumbering and pretty dumb. But once you stomp on him, he turns into the faster and more deadly Dino-Torch."}
+                         
+                         {:name "Galoomba"
+                          :thumb "img/galoomba.png"
+                          :flipped true
+                          :video-src "video/galoombas"
+                          :width 344
+                          :height 208
+                          :description "These odd round balls are the Goombas of Super Mario World. The name \"Galoomba\" came later to distinguish them from regular Goombas. They have a Koopa-esque quality where Mario can pick them up, but they don't slide along the ground like koopa shells."} 
                          ]})
 
 ;; YOSHI TACTICS
@@ -252,6 +296,9 @@
 (def exit-to-special-world {:video-src "video/exit-to-special-world"
                             :width 324
                             :height 224})
+(def koopa-intro {:video-src "video/koopa-intro"
+                  :width 444
+                  :height 292})
 
 ;; MUSIC
 (def music {:songs [{:name "above ground bgm"
@@ -325,11 +372,13 @@
 (om/root activatable-video-view/root yellow-switch-sequence (get-target "yellow-switch-sequence-hook"))
 (om/root activatable-video-view/root red-blocks-to-secret (get-target "red-blocks-to-secret-hook"))
 (om/root activatable-video-view/root exit-to-special-world (get-target "exit-to-special-world-hook"))
+(om/root activatable-video-view/root koopa-intro (get-target "koopa-intro-hook"))
 
 (om/root hud-explorer/cmp nil (get-target "hud-hook"))
 
-(om/root entity-explorer/cmp enemies (get-target "enemy-explorer-hook"))
 (om/root entity-explorer/cmp items (get-target "item-explorer-hook"))
+(om/root entity-explorer/cmp enemies (get-target "enemy-explorer-hook"))
+(om/root entity-explorer/cmp koopas (get-target "koopa-explorer-hook"))
 (om/root entity-explorer/cmp yoshi-tactics (get-target "yoshi-explorer-hook"))
 (om/root level-explorer/cmp levels (get-target "level-explorer-hook"))
 
