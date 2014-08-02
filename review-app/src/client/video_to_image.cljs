@@ -11,7 +11,7 @@
   (html [:div.video-to-image-container
          [:img {:src img-src}]]))
 
-(defn video-cmp [{:keys [video-src img-src transition pre-delay post-delay]} owner]
+(defn video-cmp [{:keys [video-src img-src width height transition pre-delay post-delay]} owner]
   (reify
     om/IInitState
     (init-state [_]
@@ -28,9 +28,13 @@
       (html [:div.video-to-image-container
              [:div.video-to-image-video {:class (str "" (when transition " fade-out"))}
               [:video {:key video-src
+                       :width width
+                       :height height
                        :ref "video"} (avideo/get-video-sources video-src)]]
              [:div.video-to-image-img 
-              [:img {:src img-src}]]]))))
+              [:img {:src img-src
+                     :width width
+                     :height height}]]]))))
 
 (defn root [app owner]
   (reify

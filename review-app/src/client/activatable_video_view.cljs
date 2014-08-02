@@ -35,6 +35,14 @@
         exts ["mp4" "webm"]]
     (map get-source exts)))
 
+
+(defn get-img-attrs [src w h]
+  (let [attrs {:key src
+               :src (str src ".gif")}]
+    (if (and w h)
+      (assoc attrs :width w :height h)
+      attrs)))
+
 (defn cmp [{:keys [video-src active width height]} owner]
   (reify
     om/IInitState
@@ -60,7 +68,7 @@
       (html [:div.activatable-video-view
              [:div.activatable-video-container {:ref "container"}
               (if (.mustUseGifs js/window)
-                [:img {:src (str video-src ".gif")}]
+                [:img (get-img-attrs video-src width height)]
                 [:video (get-video-attrs active video-src width height) (get-video-sources video-src)])
                (when played-once [:div.replay.clickable {:on-click #(play-video owner true)}
                                   [:i.fa.fa-repeat]])]]))))

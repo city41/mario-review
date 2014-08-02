@@ -21,36 +21,50 @@
                        {:name "Mushroom"
                         :thumb "img/mushroom-item.png"
                         :video-src "video/eat-mushroom"
+                        :width 136
+                        :height 166
                         :description "The most recognizable and classic item in the Mario universe. Grabbing the mushroom turns regular Mario into Super Mario. It's not as useful as in previous Mario games due to being able to store an extra feather or fire flower."}
                        
                        {:name "Fire Flower"
                         :thumb "img/fire-flower.png"
                         :video-src "video/fire-flower"
+                        :width 164
+                        :height 264
                         :description "Another classic item. The Fire Flower doesn't play too prominant of a role in the game, as the cape is usually a better choice."}
 
                        {:name "Feather"
                         :thumb "img/feather.png"
                         :video-src "video/feather"
+                        :width 188
+                        :height 328
                         :description "A unique item to Super Mario World, it grants Mario with the yellow cape giving him a limited ability to fly and hover."}
                        
                        {:name "Yoshi"
                         :thumb "img/yoshi.png"
                         :video-src "video/yoshi-eat-spit-fire"
+                        :width 190
+                        :height 134
                         :description "Yoshi has proven to be a very popular addition to Super Mario World. He is one of the most important aspects of Super Mario World; he makes the game more interesting and more fun. He's so important, a whole section is dedicated to him later on in this article."}
                        
                        {:name "P-Block"
                         :thumb "img/p-block.png"
                         :video-src "video/p-block"
+                        :width 228
+                        :height 202
                         :description "Coins to blocks and blocks to coins. The P-Block has some other tricks up its sleeve as well, especially in Ghost Houses"}
                        
                        {:name "Silver P-Block"
                         :thumb "img/silver-pblock-item.png"
                         :video-src "video/silver-p-block-many-lives"
+                        :width 340
+                        :height 268
                         :description "The silver variant of the P-Block is pretty rare, and at first glance not that useful. It just turns enemies into silver coins. But if you use it in the right spot, it can lead to many extra lives. Here on Vanilla Secret 2, the Silver P-Block nets you about 50 lives."}
                        
                        {:name "Coin Snake"
                         :thumb "img/coin-snake.png"
                         :video-src "video/coin-snake"
+                        :width 164
+                        :height 280
                         :description "There's only a few of these in the game and most of them aren't very important. But the last one you find is. The secret to these guys is you control the coins as they emerge with the d-pad. You can see that in the above video, watch Mario move in sync with the coins."}
                        ]})
 
@@ -63,57 +77,77 @@
                          {:name "Rip Van Fish"
                           :thumb "img/rip-van-fish.png"
                           :video-src "video/rip-van-fish"
+                          :width 318
+                          :height 282
                           :description "These little punks sure make water levels more challenging and interesting. If you're not packing a power up, it's worth your time to avoid waking them up."}
 
                          {:name "Sumo Brother"
                           :thumb "img/sumo-bros.png"
                           :flipped true
                           :video-src "video/sumo-bros"
+                          :width 184
+                          :height 256
                           :description "Big, badass Sumo Hammer Brother! This guy is just cool, although he doesn't really pose that much of a threat."}
                          
                          {:name "Koopa Troopa"
                           :thumb "img/koopa.png"
                           :flipped true
                           :video-src "video/koopa-troopas"
+                          :width 316
+                          :height 236
                           :description "Probably the most common enemy in the game and in the Mario series as a whole. Koopa Troopas have really grown in variety and personality in Super Mario World."}
                          {:name "Dino-Rhino"
                           :thumb "img/dino-rhino.png"
                           :flipped true
                           :video-src "video/dino-rhino"
+                          :width 280
+                          :height 240
                           :description "Dino-Rhino is lumbering and pretty dumb. But once you stomp on him, he turns into the faster and more deadly Dino-Torch."}
+                         
                          {:name "Galoomba"
                           :thumb "img/galoomba.png"
                           :flipped true
                           :video-src "video/galoombas"
+                          :width 344
+                          :height 208
                           :description "These odd round balls are the Goombas of Super Mario World. The name \"Galoomba\" came later to distinguish them from regular Goombas. They have a Koopa-esque quality where Mario can pick them up, but they don't slide along the ground like koopa shells."} 
                          
                          {:name "Magikoopa"
                           :thumb "img/magikoopa.png"
                           :video-src "video/magikoopa"
+                          :width 168
+                          :height 304
                           :description "This pain in the butt only makes his appearance late in the game. He's become a staple late game enemy in Mario games ever since."}
                          
 
                          {:name "Chargin' Chuck"
                           :thumb "img/chargin-chuck.png"
                           :video-src "video/chargin-chuck"
+                          :width 304
+                          :height 204
                           :description "Chargin' Chuck is one enemy that really helps defines Super Mario World. He's a difficult advesary, comes in many forms, and can take a beating before dying. A nice touch is bouncing on his helmet accounts for it's shape and can deflect you in odd directions."}
                          
                          
-
                          {:name "Rex"
                           :thumb "img/rex.png"
                           :video-src "video/rex"
+                          :width 220
+                          :height 184
                           :description "One of the first new enemies you encounter in the game. Rex turned out to be a pretty simple enemy, although he does look pretty cool."}
 
                          {:name "Wiggler"
                           :thumb "img/wiggler.png"
                           :hover-thumb "img/mad-wiggler.png"
                           :video-src "video/wiggler"
+                          :width 344
+                          :height 196
                           :description "Not too common in Super Mario World, but have gone on to be a staple enemy in the Mario universe. They get angry when you stomp on them. Bouncing from wiggler to wiggler is one tactic for getting lots of extra lives."}
                          
                          {:name "Fishing Lakitu"
                           :thumb "img/fishing-lakitu.png"
                           :video-src "video/fishing-lakitu"
+                          :width 372
+                          :height 392
                           :description "The biggest troll in Super Mario World. Fishing Lakitu is a great enemy because he really creates an interesting dynamic in the Forest of Illusion 4 level. Best to not take his bait."}
                          ]})
 
@@ -124,28 +158,38 @@
                                {:name "Baby Yoshies"
                                 :thumb "img/baby-yoshi.png"
                                 :video-src "video/baby-yoshi-grows-up"
+                                :width 176
+                                :height 144
                                 :description "In Star World levels there are baby yoshies of different colors. When they eat 5 enemies (or one item), they grow up into a full grown yoshi. Since they are colored yoshies, they also pack a special additional power."}
 
                                {:name "Blue Yoshi"
                                 :thumb "img/blue-yoshi.png"
                                 :video-src "video/blue-yoshi-fly"
+                                :width 244
+                                :height 256
                                 :description "Blue Yoshies can fly whenever they have a shell of any color in their mouth. Any other Yoshi must find a blue shell to fly. Yoshi flight is by far one of the most useful abilities in the game."}
                                
                                {:name "Red Yoshi"
                                 :thumb "img/red-yoshi.png"
                                 :video-src "video/red-yoshi-spit-fire"
+                                :width 336
+                                :height 172
                                 :description "Red Yoshies can spit fire with any colored shell. Any other Yoshi must find a red shell to do this, but they are very plentiful making Red Yoshi not that useful."}
                                
                                {:name "Yellow Yoshi"
                                 :thumb "img/yellow-yoshi.png"
                                 :flipped true
                                 :video-src "video/yellow-yoshi-pound"
+                                :width 352
+                                :height 296
                                 :description "Yellow Yoshies can stomp the ground and hurt enemies with any colored shell in their mouth. Any other Yoshi must find a yellow shell to do this. Since Yellow Yoshies and yellow shells are so rare, the stomping ability is rare. In fact, I never used it once at all when playing the game."}
 
                                {:name "Bypassing Switches"
                                 :thumb "img/flying-yoshi.png"
                                 :flipped true
                                 :video-src "video/flying-yoshi-leads-to-secret-exit"
+                                :width 256
+                                :height 224
                                 :description "Yoshi can often be used to get to secrets, even if the normal conditions for the secret aren't present. Here the player should have activated the red switch to get up into the secret area, but a flying Yoshi also does the trick."}
                                ]})
 
@@ -153,25 +197,61 @@
 ;; VIDEOS
 (def title {:video-src "video/title-opening"
             :img-src "img/title.png"
+            :width 436
+            :height 164
             :pre-delay 1000
             :post-delay 1000})
-(def basic-gameplay {:video-src "video/basic-gameplay"})
-(def donut-ghost {:video-src "video/donut-ghost-house-secret-exit"})
-(def soda-lake {:video-src "video/soda-lake"})
-(def keyhole-exit {:video-src "video/keyhole-exit"})
-(def cheese-bridge {:video-src "video/cheese-bridge-secret"})
-(def eeries {:video-src "video/eeries"})
-(def sunken-ghost-ship {:video-src "video/sunken-ghost-ship"})
-(def ghost-house-p-block {:video-src "video/ghost-house-p-block"})
-(def ghost-house-coin-snake {:video-src "video/ghost-house-coin-snake"})
-(def ghost-house-boo-boss {:video-src "video/ghost-house-boo-boss"})
-(def wendy {:video-src "video/wendy"})
-(def morton-koopa {:video-src "video/destroy-morton-koopa-castle"})
-(def first-see-bowser {:video-src "video/first-see-bowser"})
-(def thank-you-ending {:video-src "video/thank-you-ending"})
-(def yellow-switch-sequence {:video-src "video/yellow-switch-sequence"})
-(def red-blocks-to-secret {:video-src "video/red-blocks-to-secret"})
-(def exit-to-special-world {:video-src "video/exit-to-special-world"})
+(def basic-gameplay {:video-src "video/basic-gameplay"
+                     :width 344
+                     :height 208})
+(def donut-ghost {:video-src "video/donut-ghost-house-secret-exit"
+                  :width 460
+                  :height 300})
+(def soda-lake {:video-src "video/soda-lake"
+                :width 260
+                :height 232})
+(def keyhole-exit {:video-src "video/keyhole-exit"
+                   :width 360
+                   :height 264})
+(def cheese-bridge {:video-src "video/cheese-bridge-secret"
+                    :width 384
+                    :height 344})
+(def eeries {:video-src "video/eeries"
+             :width 192
+             :height 184})
+(def sunken-ghost-ship {:video-src "video/sunken-ghost-ship"
+                        :width 304
+                        :height 236})
+(def ghost-house-p-block {:video-src "video/ghost-house-p-block"
+                          :width 408
+                          :height 328})
+(def ghost-house-coin-snake {:video-src "video/ghost-house-coin-snake"
+                             :width 336
+                             :height 316})
+(def ghost-house-boo-boss {:video-src "video/ghost-house-boo-boss"
+                           :width 328
+                           :height 296})
+(def wendy {:video-src "video/wendy"
+            :width 280
+            :height 220})
+(def morton-koopa {:video-src "video/destroy-morton-koopa-castle"
+                   :width 396
+                   :height 396})
+(def first-see-bowser {:video-src "video/first-see-bowser"
+                       :width 512
+                       :height 448})
+(def thank-you-ending {:video-src "video/thank-you-ending"
+                       :width 512
+                       :height 448})
+(def yellow-switch-sequence {:video-src "video/yellow-switch-sequence"
+                             :width 400
+                             :height 320})
+(def red-blocks-to-secret {:video-src "video/red-blocks-to-secret"
+                           :width 400
+                           :height 392})
+(def exit-to-special-world {:video-src "video/exit-to-special-world"
+                            :width 324
+                            :height 224})
 
 ;; MUSIC
 (def music {:songs [{:name "above ground bgm"
