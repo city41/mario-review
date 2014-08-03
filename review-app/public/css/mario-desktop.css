@@ -217,6 +217,7 @@ article.review .dev-stat a {
   }
   
   article.review img {
+    height: auto;
     max-width: 290px;
   }
 
@@ -243,11 +244,71 @@ article.review .dev-stat a {
   font-size: 0;
 }
 
-#spoiler-content {
+@keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+
+}
+
+@-webkit-keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+
+}
+
+@-moz-keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+
+}
+
+@-o-keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+
+}
+
+@-ie-keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+
+}
+
+#main-content {
   display: none;
 }
 
-#spoiler-content.fade-in {
+#main-content.fade-in {
   display: block;
   animation: fadein 3s;
   -webkit-animation: fadein 3s;
@@ -298,15 +359,14 @@ article.review .dev-stat a {
   float: left;
 }
 
-.spoiler-warning {
-  border-radius: 10px;
+.gif-warning {
   padding: 15px;
   color: white;
   background-color: #be1b44;
   background-position: 20px 50%;
   background-repeat: no-repeat;
   background-image: url(../img/mario-die.png);
-  margin: 30px 0 10px 0;
+  margin: 0;
   animation: mario-agitate 2s infinite;
   -webkit-animation: mario-agitate 2s infinite;
   -moz-animation: mario-agitate 2s infinite;
@@ -319,7 +379,7 @@ article.review .dev-stat a {
   -ie-box-shadow: 6px 6px 8px 1px #999999;
 }
 
-.spoiler-warning.fade-out {
+.gif-warning.fade-out {
   animation: fadeout 1s;
   -webkit-animation: fadeout 1s;
   -moz-animation: fadeout 1s;
@@ -327,27 +387,27 @@ article.review .dev-stat a {
   -ie-animation: fadeout 1s;
 }
 
-.spoiler-warning.fade-out-done {
+.gif-warning.fade-out-done {
   display: none;
 }
 
-.spoiler-warning-text {
+.gif-warning-text {
   line-height: 22px;
   margin-bottom: 20px;
   margin-left: 90px;
 }
 
-.spoiler-warning-text h2 {
+.gif-warning-text h2 {
   padding: 0;
   margin: 0 0 10px 0;
 }
 
-.spoiler-warning-button-container {
+.gif-warning-button-container {
   text-align: center;
   margin-top: 20px;
 }
 
-.spoiler-warning-button-container button {
+.gif-warning-button-container button {
   font-weight: bold;
   font-size: 1.2em;
   border: 1px solid white;
@@ -357,17 +417,17 @@ article.review .dev-stat a {
   padding: 10px;
 }
 
-.spoiler-warning-button-container button:hover {
+.gif-warning-button-container button:hover {
   border: 1px solid #be1b44;
   background-color: white;
   color: #be1b44;
 }
 
-.spoiler-warning-button-container button:active {
+.gif-warning-button-container button:active {
   outline: none;
 }
 
-.spoiler-warning-button-container button:focus {
+.gif-warning-button-container button:focus {
   outline: none;
 }
 
@@ -571,6 +631,14 @@ article.review .dev-stat a {
   
 100% {
     opacity: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .video-to-image-container {
+    height: auto;
   }
 
 }

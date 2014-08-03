@@ -9,7 +9,7 @@
             [mario.hud-explorer :as hud-explorer]
             [mario.level-explorer :as level-explorer]
             [mario.music-player :as music-player]
-            [mario.spoiler-warning :as spoiler-warning]))
+            [mario.gif-warning :as gif-warning]))
 
 (enable-console-print!)
 
@@ -349,7 +349,7 @@
 (defn get-target [id]
   {:target (.getElementById js/document id)})
 
-(om/root spoiler-warning/cmp nil (get-target "spoiler-warning-hook"))
+(om/root gif-warning/cmp nil (get-target "gif-warning-hook"))
 (om/root video-to-image/root title (get-target "game-title-hook"))
 
 (om/root activatable-video-view/root basic-gameplay (get-target "basic-gameplay-hook"))

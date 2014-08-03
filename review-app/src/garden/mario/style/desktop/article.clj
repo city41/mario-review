@@ -4,6 +4,13 @@
             [garden.def :refer [defstyles defkeyframes]]
             [garden.units :refer [px percent s em]]))
 
+(defkeyframes fadein
+  [:from
+   {:opacity 0}]
+
+  [:to
+   {:opacity 1}])
+
 (def h1-images ["pipe"
                 "yoshi-house"
                 "mushroom"
@@ -118,7 +125,8 @@
       :padding (px 10)}
      [:h1 {:width "calc(100% + 20px)"
            :margin [[(px 40) 0 0 (px -10)]]}]
-     [:img {:max-width (px 290)}]])
+     [:img {:max-width (px 290)
+            :height "auto"}]])
 
    [:.caption
     {:padding (px 8)
@@ -138,11 +146,13 @@
      :font-size 0
      :display "block"}]
 
-   [:#spoiler-content
+   fadein
+   
+   [:#main-content
     {:display "none"}
     [:&.fade-in
      {:display "block"}
-     ^:prefix {:animation [["fadein" (s 3)]]}]]
+     ^:prefix {:animation [[fadein (s 3)]]}]]
 
    [:#welcome-vid-container
     {:width (percent 100)

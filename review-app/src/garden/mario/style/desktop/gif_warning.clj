@@ -1,4 +1,4 @@
-(ns mario.style.desktop.spoiler-warning
+(ns mario.style.desktop.gif-warning
   (:require [mario.style.desktop.variables :as v]
             [garden.def :refer [defstyles defkeyframes]]
             [garden.units :refer [px percent s em]]))
@@ -15,15 +15,14 @@
       {:background-position [[(px 15) (percent 50)]]}])
 
 (defn export []
-  [[:.spoiler-warning
-    {:margin [[(px 30) 0 (px 10) 0]]
+  [[:.gif-warning
+    {:margin 0
      :background-image "url(../img/mario-die.png)"
      :background-repeat "no-repeat"
      :background-position [[(px 20) (percent 50)]]
      :background-color (:cmp-main v/colors)
      :color (:main-bg v/colors)
-     :padding (px 15)
-     :border-radius (px 10)}
+     :padding (px 15)}
     ^:prefix {:box-shadow v/cmp-box-shadow
               :animation [["mario-agitate" (s 2) "infinite"]]}
     [:&.fade-out
@@ -31,7 +30,7 @@
     [:&.fade-out-done
      {:display "none"}]]
 
-   [:.spoiler-warning-text
+   [:.gif-warning-text
     {:margin-left (px 90)
      :margin-bottom (px 20)
      :line-height (px 22)}
@@ -39,7 +38,7 @@
      {:margin [[0 0 (px 10) 0]]
       :padding 0}]]
 
-   [:.spoiler-warning-button-container
+   [:.gif-warning-button-container
     {:margin-top (px 20)
      :text-align "center"}
     [:button

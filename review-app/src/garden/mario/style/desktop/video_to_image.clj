@@ -1,5 +1,6 @@
 (ns mario.style.desktop.video-to-image
   (:require [mario.style.desktop.variables :as v]
+            [mario.style.desktop.media-util :refer [phone]]
             [garden.def :refer [defstyles defkeyframes]]
             [garden.units :refer [px s]]))
 
@@ -22,4 +23,8 @@
     [:&.fade-out
      ^:prefix {:animation [["fadeout" (s 1)]]}
      {:opacity 0}]]
-   fadeout])
+   fadeout
+
+   (phone
+    [:.video-to-image-container
+     {:height "auto"}])])
