@@ -848,6 +848,28 @@ article.review .dev-stat a {
   margin-bottom: 8px;
 }
 
+@media (max-width: 768px) {
+
+  
+  
+  .level-explorer.entity-explorer .level-explorer-active-level {
+    width: 256px;
+  }
+  
+  .level-explorer.entity-explorer .level-explorer-entry {
+    margin-bottom: 15px;
+  }
+  
+  .level-explorer.entity-explorer .level-explorer-entry:hover {
+    background-color: #be1b44;
+  }
+  
+  .level-explorer.entity-explorer .level-explorer-entry .level-explorer-closed-description {
+    float: none;
+  }
+
+}
+
 .entity-explorer {
   padding: 20px;
   color: white;

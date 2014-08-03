@@ -5,8 +5,7 @@
 
 (defn build-open-header [owner levels]
   (let [click-fn (fn [] (om/set-state! owner :open true))]
-    [:div.entity-explorer.level-explorer.clickable {:on-click click-fn
-                                                    :on-touch-end click-fn}
+    [:div.entity-explorer.level-explorer.clickable {:on-click click-fn}
      [:div.thumbnail-container
       (map (fn [l] [:img.entity-explorer-header {:src (:thumb-src l)}]) (take 4 levels))
       [:div " ... click to explore more levels"]]
@@ -15,8 +14,7 @@
 
 (defn build-row [index {:keys [thumb-src name description]} owner]
   (let [click-fn (fn [] (om/set-state! owner :active-index index))]
-    [:div.level-explorer-entry {:on-click click-fn
-                                :on-touch-end click-fn}
+    [:div.level-explorer-entry {:on-click click-fn}
      [:img {:src thumb-src}]
      [:div.level-explorer-closed-description
       [:h2 name]
@@ -30,8 +28,7 @@
 
 (defn build-active-level [owner {:keys [level video-src name description]}]
   (let [click-fn (fn [] (om/set-state! owner :active-index nil))]
-    [:div.level-explorer-active-level.clearfix {:on-click #(when-not (.mustUseGifs js/window) (click-fn))
-                                                :on-touch-end click-fn}
+    [:div.level-explorer-active-level.clearfix {:on-click click-fn}
      [:div.level-explorer-active-level-video
       (om/build avideo/cmp {:video-src video-src :active true :width 256 :height 224})]
      [:div.level-explorer-active-level-body
@@ -51,8 +48,7 @@
      (build-rows upper-levels owner)
      (when active-level (build-active-level owner active-level))
      (build-rows lower-levels owner (inc (or active-index -1)))
-     [:div.clickable.hud-explorer-toggle-tray.clear {:on-click click-fn
-                                               :on-touch-end click-fn}
+     [:div.clickable.hud-explorer-toggle-tray.clear {:on-click click-fn}
       [:i.fa.fa-caret-up]]]))
 
 (defn cmp [{:keys [levels]} owner]

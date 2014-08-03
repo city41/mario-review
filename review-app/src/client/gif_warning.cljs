@@ -33,7 +33,7 @@
       (html [:div.gif-warning {:style #js {:display (get-display show-warning)}}
              [:div.gif-warning-text
               [:h2 "Hey!!"]
-              [:p "This review will use a ton of bandwidth on phones and tablets. It has 52 animated gifs!"]
+              [:p "This review uses a ton of bandwidth on phones and tablets. It has 53 animated gifs!"]
               [:p "You're better off using a desktop machine if you can"]]
              [:div.gif-warning-button-container
-              [:button {:on-click #(reveal owner)} "Show Me Anyway"]]]))))
+              [:button {:on-click #(reveal owner)} "I'm Going In!"]]]))))

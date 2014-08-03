@@ -342,7 +342,7 @@
                       {:name "Bowser's Back Door"
                        :thumb-src "img/levels/bowsers-back-door-thumb.png"
                        :video-src "video/bowsers-back-door"
-                       :description "The level right before confronting Bowser. Gameplay wise there's nothing unique here, but the spotlight effect is fun. I think Nintendo just saw a chance to show off the new hardware a little bit."}
+                       :description "The level right before confronting Bowser. Gameplay wise there's nothing unique here, but the spotlight effect is fun."}
                       {:name "Tubular"
                        :thumb-src "img/levels/tubular-thumb.png"
                        :video-src "video/tubular"

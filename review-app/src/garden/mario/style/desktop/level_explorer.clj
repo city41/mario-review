@@ -1,5 +1,6 @@
 (ns mario.style.desktop.level-explorer
   (:require [mario.style.desktop.variables :as v]
+            [mario.style.desktop.media-util :refer [phone]]
             [garden.def :refer [defstyles defkeyframes]]
             [garden.units :refer [px percent s em]]))
 
@@ -38,4 +39,15 @@
 
    [:.level-explorer-active-level-body
     [:h2
-     {:margin-bottom (px 8)}]]])
+     {:margin-bottom (px 8)}]]
+
+   (phone
+    [:.level-explorer.entity-explorer
+     [:.level-explorer-active-level
+      {:width (px 256)}]
+     [:.level-explorer-entry
+      {:margin-bottom (px 15)}
+      [:&:hover
+       {:background-color (:cmp-main v/colors)}]
+      [:.level-explorer-closed-description
+       {:float "none"}]]])])
