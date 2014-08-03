@@ -3,12 +3,12 @@
 This is a rather detailed review of Super Mario World for the Super Nintendo. The review features 53 videos, interactive components, and lots of information on the game. It was an experiment and a way to get some more ClojureScript and [Om](https://github.com/swannodette/om) under my belt.
 
 ##cropping-app
-This directory contains an Atom Shell based app (named Daisy) that manipulates Super Nintendo videos. Daisy is how I made all of the videos for the review. It's currently a very raw, very alpha app.
+This directory contains an Atom Shell based app (named Daisy) that manipulates Super Nintendo videos. Daisy is how I made all of the videos for the review. It's currently a very raw, very alpha app. The app is built with ClojureScript and Om.
 
 ![daisy](https://raw.githubusercontent.com/city41/mario-review/master/daisy.png)
 
 ##review-app
-This directory contains the actual review. The live version is at [http://www.mattgreer.org/super-mario-world](http://www.mattgreer.org/super-mario-world)
+This directory contains the actual review. The live version is at [http://www.mattgreer.org/super-mario-world](http://www.mattgreer.org/super-mario-world). The review is also built with ClojureScript and Om, along with [Garden](https://github.com/noprompt/garden).
 
 ![review](https://raw.githubusercontent.com/city41/mario-review/master/screenshot.png)
 
