@@ -4,6 +4,7 @@
             [cljs.core.async :as async :refer [>! <! put! chan]]
             [om.core :as om :include-macros true]
             [mario.activatable-video-view :as avideo]
+            [mario.util :as util]
             [sablono.core :as html :refer-macros [html]])
   (:import [goog.events EventType]))
 
@@ -52,5 +53,5 @@
     
     om/IRender
     (render [_]
-      (let [cmp (if (.mustUseGifs js/window) img-cmp video-cmp)]
+      (let [cmp (if (util/must-use-gifs) img-cmp video-cmp)]
            (om/build cmp app)))))

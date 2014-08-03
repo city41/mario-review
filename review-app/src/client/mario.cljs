@@ -225,13 +225,13 @@
                                 :height 296
                                 :description "Yellow Yoshies can stomp the ground and hurt enemies with any colored shell in their mouth. Any other Yoshi must find a yellow shell to do this. Since Yellow Yoshies and yellow shells are so rare, the stomping ability is rare. In fact, I've never used it once at all when playing the game."}
 
-                               {:name "Kamakaze Yoshi"
-                                :thumb "img/yoshi-eat-kamakaze-shell.png"
+                               {:name "Kamikaze Yoshi"
+                                :thumb "img/yoshi-eat-kamikaze-shell.png"
                                 :flipped true
-                                :video-src "video/yoshi-eat-kamakaze-shell"
+                                :video-src "video/yoshi-eat-kamikaze-shell"
                                 :width 272
                                 :height 232
-                                :description "If Yoshi eats a kamakaze shell, then he gains all three power ups at once."}
+                                :description "If Yoshi eats a kamikaze shell, then he gains all three power ups at once."}
 
                                {:name "Bypassing Switches"
                                 :thumb "img/flying-yoshi.png"

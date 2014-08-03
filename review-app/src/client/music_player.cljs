@@ -1,5 +1,6 @@
 (ns mario.music-player
   (:require [om.core :as om :include-macros true]
+            [mario.util :as util]
             [sablono.core :as html :refer-macros [html]]))
 
 (defn build-song-entry [owner index active-index {:keys [thumb-src name]}]
@@ -12,7 +13,7 @@
                        (om/set-state! owner :first-play false))
                      (om/set-state! owner :active-index (if active nil index))))]
     [:div.music-player-song-entry {:class (str "clickable" (when active " active-song"))
-                                   :on-click #(when-not (.mustUseGifs js/window) (click-fn))
+                                   :on-click #(when-not (util/must-use-gifs) (click-fn))
                                    :on-touch-end click-fn}
      [:img {:src thumb-src :title name}]]))
 

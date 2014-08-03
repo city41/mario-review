@@ -1,10 +1,11 @@
 (ns mario.gif-warning
   (:require [goog.dom.classes :as gclasses]
+            [mario.util :as util]
             [om.core :as om :include-macros true]
             [sablono.core :as html :refer-macros [html]]))
 
 (defn user-should-see-warning []
-  (.mustUseGifs js/window))
+  (util/must-use-gifs))
 
 (defn reveal [owner]
   (let [target (.getElementById js/document "main-content")]
@@ -34,6 +35,7 @@
              [:div.gif-warning-text
               [:h2 "Hey!!"]
               [:p "This review uses a ton of bandwidth on phones and tablets. It has 53 animated gifs!"]
+              [:p "It's been known to crash some mobile browsers too ..."]
               [:p "You're better off using a desktop machine if you can"]]
              [:div.gif-warning-button-container
               [:button {:on-click #(reveal owner)} "I'm Going In!"]]]))))

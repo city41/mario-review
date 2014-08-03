@@ -20,14 +20,6 @@
 
 @media (max-width: 768px) {
 
-  .show-xsv {
-    display: none;
-  }
-
-}
-
-@media (max-width: 768px) {
-
   .hidden-xs {
     display: none;
   }
@@ -212,6 +204,14 @@ article.review .dev-stat a {
 
 @media (max-width: 768px) {
 
+  body {
+    overflow-x: hidden;
+  }
+  
+  #background-hook {
+    background-image: none;
+  }
+  
   article.review {
     padding: 10px;
     margin: 0;
@@ -220,6 +220,8 @@ article.review .dev-stat a {
   
   article.review h1 {
     margin: 40px 0 0 -10px;
+    overflow-x: hidden;
+    white-space: nowrap;
     width: calc(100% + 20px);
   }
   

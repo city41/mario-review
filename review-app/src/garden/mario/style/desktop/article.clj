@@ -118,11 +118,17 @@
        :text-decoration "none"}]]]
 
    (phone
+    [:body
+     {:overflow-x "hidden"}]
+    [:#background-hook
+     {:background-image "none"}]
     [:article.review
      {:width (percent 100)
       :margin 0
       :padding (px 10)}
      [:h1 {:width "calc(100% + 20px)"
+           :white-space "nowrap"
+           :overflow-x "hidden"
            :margin [[(px 40) 0 0 (px -10)]]}]
      [:img {:max-width (px 290)
             :height "auto"}]])

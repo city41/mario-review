@@ -2,6 +2,7 @@
   (:require [cljs.core.async :as async :refer [<!]]
             [om.core :as om :include-macros true]
             [sablono.core :as html :refer-macros [html]]
+            [mario.util :as util]
             [mario.scroll-activate-root :as scroll-activate-root]))
 
 (defn get-video [owner]
@@ -77,7 +78,7 @@
     (render-state [_ {:keys [played-once] :as state}]
       (html [:div.activatable-video-view 
              [:div.activatable-video-container {:ref "container"}
-              (if (.mustUseGifs js/window)
+              (if (util/must-use-gifs)
                 [:img (get-img-attrs video-src width height)]
                 [:video (get-video-attrs active video-src width height) (get-video-sources video-src)])
                (when played-once [:div.replay.clickable {:on-click #(play-video owner true)}
