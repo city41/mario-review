@@ -79,6 +79,6 @@
                 [:img (get-img-attrs video-src width height)]
                 [:video (get-video-attrs active video-src width height) (get-video-sources video-src)])
                (when played-once [:div.replay.clickable {:on-click #(play-video owner true)}
-                                  [:i.fa.fa-repeat]])]]))))
+                                  [:i.fa.fa-play]])]]))))
 
 (def root (scroll-activate-root/get-root cmp))

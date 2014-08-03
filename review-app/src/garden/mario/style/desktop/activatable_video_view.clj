@@ -2,7 +2,7 @@
   (:require [mario.style.desktop.variables :as v]
             [garden.def :refer [defstyles]]
             [garden.color :refer [rgba]]
-            [garden.units :refer [px]]))
+            [garden.units :refer [px em]]))
 
 (defn export []
   [[:.activatable-video-container
@@ -11,9 +11,16 @@
       :margin "0 auto"}]
    [:.replay
     {:position "absolute"
-     :left (px -1)
-     :bottom (px -1)
+     :left 0
+     :bottom 0
      :color (:light-grey v/colors)
+     :border-width (px 1)
+     :border-style "solid"
+     :border-color (:light-grey v/colors)
      :background-color (rgba 255 255 255 0.9)
-     :border-radius (px 3)
-     :padding (px 3)}]])
+     :font-size (em 1.4)
+     :padding (px 6)}
+    [:&:hover
+     {:background-color (:light-grey v/colors)
+      :color (rgba 255 255 255 0.9)}]]])
+

@@ -650,13 +650,21 @@ article.review .dev-stat a {
 }
 
 .replay {
-  padding: 3px;
-  border-radius: 3px;
-  background-color: hsla(0, 0%, 100%, 0.9);
-  color: #aaaaaa;
-  bottom: -1px;
-  left: -1px;
+  border-width: 1px;
+  border-color: #aaaaaa;
+  padding: 6px;
+  border-style: solid;
   position: absolute;
+  font-size: 1.4em;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  bottom: 0;
+  color: #aaaaaa;
+  left: 0;
+}
+
+.replay:hover {
+  color: hsla(0, 0%, 100%, 0.9);
+  background-color: #aaaaaa;
 }
 
 .hud-explorer {

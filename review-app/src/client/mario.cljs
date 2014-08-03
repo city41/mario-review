@@ -187,8 +187,8 @@
                          {:name "Mask Koopas"
                           :thumb "img/mask-koopa.png"
                           :video-src "video/mask-koopas"
-                          :width 344
-                          :height 208
+                          :width 380
+                          :height 248
                           :description "Once you have beaten Special World, all koopas in the game become Mask Koopas. Instead of normal shells they wear Mario masks. Other enemies change too, but the Mask Koopa is the most prominent one."}
                          ]})
 
