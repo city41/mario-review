@@ -11,23 +11,23 @@
   [:to
    {:opacity 1}])
 
-(def h1-images ["pipe"
-                "yoshi-house"
-                "mushroom"
-                "question-block"
-                "green-switch"
-                "galoomba"
-                "jump-block"
-                "ghost-house"
-                "yoshi"
-                "wendy"
-                "pumpkin-plant"])
-
-(defn get-h1 [img]
-  [(str "&." img) {:background-image (str "url(../img/" img ".png)")}])
-
-(defn get-h1s-with-images []
-  (map get-h1 h1-images))
+; (def h1-images ["pipe"
+;                 "yoshi-house"
+;                 "mushroom"
+;                 "question-block"
+;                 "green-switch"
+;                 "galoomba"
+;                 "jump-block"
+;                 "ghost-house"
+;                 "yoshi"
+;                 "wendy"
+;                 "pumpkin-plant"])
+;
+; (defn get-h1 [img]
+;   [(str "&." img) {:background-image (str "url(../img/" img ".png)")}])
+;
+; (defn get-h1s-with-images []
+;   (map get-h1 h1-images))
 
 (defn export []
   [[:* :*:before :*:after
@@ -60,7 +60,7 @@
       :font-style "italic"
       :padding (px 8)
       :margin-top (px 8)}]
-    
+
    [:button:focus :button:active :a:focus :a:active
     {:outline "none !important"}]
 
@@ -96,7 +96,6 @@
       :width "calc(100% + 120px)"
       :height (px 60)
       :line-height (px 60)}
-     (get-h1s-with-images)
      [:&.wendy {:background-position [[(px 35) (percent 50)]]}]
      [:&.yoshi {:background-position [[(px 35) (percent 50)]]}]]
     [:h2
@@ -160,7 +159,7 @@
      :display "block"}]
 
    fadein
-   
+
    [:#main-content
     {:display "none"}
     [:&.fade-in

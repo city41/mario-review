@@ -41,7 +41,7 @@
 
 (defn get-img-attrs [src w h]
   (let [attrs {:key src
-               :src (str src ".gif")}]
+               :src src}]
     (if (and w h)
       (assoc attrs :width w :height h)
       attrs)))
@@ -49,6 +49,11 @@
 (defn hook [owner]
   (when-let [v (get-video owner)]
     (.addEventListener v "ended" #(om/set-state! owner :played-once true))))
+
+(defn get-image [active video-src width height]
+  (if active
+    [:img (get-img-attrs (str video-src ".gif") width height)]
+    [:img (get-img-attrs (str video-src "-poster.png") width height)]))
 
 (defn cmp [{:keys [video-src active width height]} owner]
   (reify
@@ -79,7 +84,7 @@
       (html [:div.activatable-video-view 
              [:div.activatable-video-container {:ref "container"}
               (if (util/must-use-gifs)
-                [:img (get-img-attrs video-src width height)]
+                (get-image active video-src width height)
                 [:video (get-video-attrs active video-src width height) (get-video-sources video-src)])
                (when played-once [:div.replay.clickable {:on-click #(play-video owner true)}
                                   [:i.fa.fa-play]])]]))))

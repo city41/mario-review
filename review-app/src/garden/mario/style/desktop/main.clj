@@ -8,10 +8,12 @@
             [mario.style.desktop.hud-explorer :as hud-explorer]
             [mario.style.desktop.music-player :as music-player]
             [mario.style.desktop.level-explorer :as level-explorer]
+            [mario.style.desktop.sprites :as sprites]
             [garden.def :refer [defstylesheet defstyles]]
             [garden.units :refer [px]]))
 
 (defstyles stylesheet
+  (sprites/export)
   (media-util/export)
   (article/export)
   (gif-warning/export)
@@ -21,4 +23,3 @@
   (music-player/export)
   (level-explorer/export)
   (entity-explorer/export))
-  
