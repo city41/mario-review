@@ -15,8 +15,7 @@
   (let [active (= active-index entity-index)
         click-fn (fn [] (om/set-state! owner :active-index entity-index))]
     [:div.entity-explorer-entry {:class (str "" (when active " active-entity") (when flipped " flipped"))
-                                 :on-click click-fn
-                                 :on-touch-end click-fn}
+                                 :on-click click-fn}
      [:img (entity-img-attrs thumb hover-thumb)]]))
 
 (defn build-entities
@@ -36,8 +35,7 @@
 
 (defn build-open-header [owner entities plural-type-name]
   (let [click-fn (fn [] (om/set-state! owner :open true))]
-    [:div.entity-explorer.clickable {:on-click click-fn
-                                     :on-touch-end click-fn}
+    [:div.entity-explorer.clickable {:on-click click-fn}
      (map (fn [e] [:img.entity-explorer-header {:src (:thumb e)}]) (take 4 entities))
      (str " click to explore more " plural-type-name)
      [:div.clickable.hud-explorer-toggle-tray
@@ -56,8 +54,7 @@
      [:div.entity-explorer-main-area (if active-entity (build-main active-entity) (build-instructions type-name))]
      [:div.entity-explorer-column.entity-explorer-column-right.hidden-xsv (build-entities owner right-entities active-index offset)]
      [:div.show-xsv.rotate-tip (str "rotate your phone to see more " plural-type-name)]
-     [:div.clickable.hud-explorer-toggle-tray.clear {:on-click click-fn
-                                                     :on-touch-end click-fn}
+     [:div.clickable.hud-explorer-toggle-tray.clear {:on-click click-fn}
       [:i.fa.fa-caret-up]]]))
 
 (defn cmp [{:keys [entities type-name plural]} owner]

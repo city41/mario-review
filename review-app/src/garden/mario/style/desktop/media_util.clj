@@ -20,5 +20,8 @@
     [:.hidden-xsv
      {:display "none"}])
    (phone
+    [:.show-xsv
+     {:display "none"}])
+   (phone
     [:.hidden-xs
      {:display "none"}])])

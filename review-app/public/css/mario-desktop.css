@@ -20,6 +20,14 @@
 
 @media (max-width: 768px) {
 
+  .show-xsv {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
   .hidden-xs {
     display: none;
   }
@@ -959,16 +967,13 @@ article.review .dev-stat a {
 .rotate-tip {
   font-size: 0.9em;
   font-style: italic;
+  clear: both;
 }
 
 @media (max-width: 768px) {
 
   .entity-explorer {
     margin: 0 -10px 0 -10px;
-  }
-  
-  .entity-explorer .entity-explorer-column {
-    width: auto;
   }
 
 }
@@ -980,7 +985,7 @@ article.review .dev-stat a {
   }
   
   .entity-explorer .entity-explorer-main-area {
-    width: calc(100% - 70px);
+    width: calc(100% - 84px);
   }
   
   .entity-explorer .hud-explorer-toggle-tray {

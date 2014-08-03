@@ -61,19 +61,18 @@
       {:margin-left (px 10)}]]]
    
    [:.rotate-tip
-    {:font-style "italic"
+    {:clear "both"
+     :font-style "italic"
      :font-size (em 0.9)}]
 
    (phone
     [:.entity-explorer
-     {:margin [[0 (px -10) 0 (px -10)]]}
-     [:.entity-explorer-column
-      {:width "auto"}]])
+     {:margin [[0 (px -10) 0 (px -10)]]}])
 
    (phone-vertical
     [:.entity-explorer
      {:padding-right 0}
      [:.entity-explorer-main-area
-      {:width "calc(100% - 70px)"}]
+      {:width "calc(100% - 84px)"}]
      [:.hud-explorer-toggle-tray
       {:width "calc(100% + 20px)"}]])])
