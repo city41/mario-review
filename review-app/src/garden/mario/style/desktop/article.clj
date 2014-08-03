@@ -21,7 +21,7 @@
                 "ghost-house"
                 "yoshi"
                 "wendy"
-                "mask-koopa"])
+                "pumpkin-plant"])
 
 (defn get-h1 [img]
   [(str "&." img) {:background-image (str "url(../img/" img ".png)")}])
@@ -186,4 +186,12 @@
    [:.music-callout-body
     {:float "left"
      :margin-left (px 10)
-     :width "calc(100% - 150px)"}]])
+     :width "calc(100% - 150px)"}]
+
+   [:.autumn-enemies
+    {:width (percent 100)
+     :margin [[(px 40) 0]]}
+    [:td
+     {:width (percent 50)
+      :padding [[(px 10) 0]]
+      :text-align "center"}]]])

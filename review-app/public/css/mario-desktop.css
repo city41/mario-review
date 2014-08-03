@@ -149,8 +149,8 @@ article.review h1.wendy {
   background-image: url(../img/wendy.png);
 }
 
-article.review h1.mask-koopa {
-  background-image: url(../img/mask-koopa.png);
+article.review h1.pumpkin-plant {
+  background-image: url(../img/pumpkin-plant.png);
 }
 
 article.review h1.wendy {
@@ -356,6 +356,17 @@ article.review .dev-stat a {
   width: calc(100% - 150px);
   margin-left: 10px;
   float: left;
+}
+
+.autumn-enemies {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.autumn-enemies td {
+  text-align: center;
+  padding: 10px 0;
+  width: 50%;
 }
 
 .gif-warning {
