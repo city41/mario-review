@@ -26,7 +26,7 @@ After all that churns out, you should see the review at `http://localhost:3000`
 
 ###Known issues
 
-* For phones and tablets, animated gifs are used instead of videos. They total up to more than 80 megs of gifs, so can bog down phones, even crash mobile browsers. If the review goes into gif modef, a warning dialog pops up first.
+* For phones and tablets, animated gifs are used instead of videos. They total up to more than 80 megs of gifs, so can bog down phones, even crash mobile browsers. If the review goes into gif mode, a warning dialog pops up first.
   * You can force gif mode with `index.html?forceGifs`
 * Should probably CSS sprite all the images
 * Some people have reported issues with the videos on certain browser/os combos
