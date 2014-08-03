@@ -21,7 +21,9 @@
        (catch js/Object e))))
 
 (defn get-video-attrs [active video-src width height]
-  (let [attrs {:ref "video" :key video-src}
+  (let [attrs {:ref "video"
+               :key video-src
+               :poster (str video-src "-poster.png")}
         attrs (if active
                 (assoc attrs :autoPlay "autoplay")
                 attrs)
