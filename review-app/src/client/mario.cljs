@@ -23,21 +23,21 @@
                         :video-src "video/eat-mushroom"
                         :width 136
                         :height 166
-                        :description "The most recognizable and classic item in the Mario universe. Grabbing the mushroom turns regular Mario into Super Mario. It's not as useful as in previous Mario games due to being able to store an extra feather or fire flower."}
+                        :description "The most recognizable and classic item in the Mario universe. Grabbing the mushroom turns regular Mario into Super Mario. It's not as useful as in previous Mario games because in Super Mario World you can usually store an extra feather or fire flower."}
                        
                        {:name "Fire Flower"
                         :thumb "img/fire-flower.png"
                         :video-src "video/fire-flower"
                         :width 164
                         :height 264
-                        :description "Another classic item. The Fire Flower doesn't play too prominant of a role in the game, as the cape is usually a better choice."}
+                        :description "Another classic item. The Fire Flower doesn't play as prominant of a role in the game as in the past, as the feather is usually a better choice."}
 
                        {:name "Feather"
                         :thumb "img/feather.png"
                         :video-src "video/feather"
                         :width 188
                         :height 328
-                        :description "A unique item to Super Mario World, it grants Mario with the yellow cape giving him a limited ability to fly and hover."}
+                        :description "A unique item to Super Mario World that never made a return to any other game, it grants Mario with the yellow cape giving Mario a limited ability to fly and hover."}
                        
                        {:name "P-Block"
                         :thumb "img/p-block.png"
@@ -51,14 +51,14 @@
                         :video-src "video/yoshi-eat-spit-fire"
                         :width 190
                         :height 134
-                        :description "Yoshi has proven to be a very popular addition to Super Mario World. He is one of the most important aspects of Super Mario World; he makes the game more interesting and more fun. He's so important, a whole section is dedicated to him later on in this article."}
+                        :description "Yoshi has proven to be a very popular addition to Super Mario World. He is one of the most important aspects of the game; he makes many things more interesting and fun. He's so important, a whole section is dedicated to him later on in this article."}
                        
                        {:name "Silver P-Block"
                         :thumb "img/silver-pblock-item.png"
                         :video-src "video/silver-p-block-many-lives"
                         :width 340
                         :height 268
-                        :description "The silver variant of the P-Block is pretty rare, and at first glance not that useful. It just turns enemies into silver coins. But if you use it in the right spot, it can lead to many extra lives. Here on Vanilla Secret 2, the Silver P-Block nets you about 50 lives."}
+                        :description "The silver variant of the P-Block is pretty rare, and at first glance not that useful. It just turns enemies into silver coins. But if you use it in the right spot, it can lead to many extra lives. Here on Vanilla Secret 2, the Silver P-Block nets you about 50 additional lives."}
                        
                        {:name "Coin Snake"
                         :thumb "img/coin-snake.png"
@@ -125,7 +125,7 @@
                           :video-src "video/chargin-chuck"
                           :width 304
                           :height 204
-                          :description "Chargin' Chuck is one enemy that really helps defines Super Mario World. He's a difficult advesary, comes in many forms, and can take a beating before dying. A nice touch is bouncing on his helmet accounts for it's shape and can deflect you in odd directions."}
+                          :description "Chargin' Chuck is one enemy that really helps defines Super Mario World. He's a difficult adversary, comes in many forms, and can take a beating before dying. A nice touch is bouncing on his helmet accounts for its shape and can deflect you in odd directions."}
                          
                          
                          {:name "Rex"
@@ -141,7 +141,7 @@
                           :video-src "video/wiggler"
                           :width 344
                           :height 196
-                          :description "Not too common in Super Mario World, but have gone on to be a staple enemy in the Mario universe. They get angry when you stomp on them. Bouncing from wiggler to wiggler is one tactic for getting lots of extra lives."}
+                          :description "Not too common in Super Mario World, but wigglers have gone on to be a staple enemy in the Mario universe. They get angry when you stomp on them. Bouncing from wiggler to wiggler is one tactic for getting many extra lives."}
                          
                          {:name "Fishing Lakitu"
                           :thumb "img/fishing-lakitu.png"
@@ -177,19 +177,19 @@
                           :height 204
                           :description "If a blue koopa loses his shell, he will kick any shells he comes across. This guy can be a real bastard in later levels."}
                          
-                         {:name "Mask Koopas"
-                          :thumb "img/mask-koopa.png"
-                          :video-src "video/mask-koopas"
-                          :width 344
-                          :height 208
-                          :description "Once you have beaten Special World, all koopas in the game become Mask Koopas. Instead of normal shells they wear Mario masks. Other enemies change too, but the Mask Koopa is the most prominent one."}
-
                          {:name "Climbing Koopas"
                           :thumb "img/koopa-on-fence.png"
                           :video-src "video/koopas-on-fence"
                           :width 312
                           :height 184
                           :description "In many of the castles Koopas can be seen climbing around on fences. Mario can get on the opposite side of the fence and punch them off."}
+
+                         {:name "Mask Koopas"
+                          :thumb "img/mask-koopa.png"
+                          :video-src "video/mask-koopas"
+                          :width 344
+                          :height 208
+                          :description "Once you have beaten Special World, all koopas in the game become Mask Koopas. Instead of normal shells they wear Mario masks. Other enemies change too, but the Mask Koopa is the most prominent one."}
                          ]})
 
 ;; YOSHI TACTICS
@@ -215,7 +215,7 @@
                                 :video-src "video/red-yoshi-spit-fire"
                                 :width 336
                                 :height 172
-                                :description "Red Yoshies can spit fire with any colored shell. Any other Yoshi must find a red shell to do this, but they are very plentiful making Red Yoshi not that useful."}
+                                :description "Red Yoshies can spit fire with any colored shell. Any other Yoshi must find a red shell to do this, but red shells are very plentiful making Red Yoshi not that useful."}
                                
                                {:name "Yellow Yoshi"
                                 :thumb "img/yellow-yoshi.png"
@@ -223,7 +223,7 @@
                                 :video-src "video/yellow-yoshi-pound"
                                 :width 352
                                 :height 296
-                                :description "Yellow Yoshies can stomp the ground and hurt enemies with any colored shell in their mouth. Any other Yoshi must find a yellow shell to do this. Since Yellow Yoshies and yellow shells are so rare, the stomping ability is rare. In fact, I never used it once at all when playing the game."}
+                                :description "Yellow Yoshies can stomp the ground and hurt enemies with any colored shell in their mouth. Any other Yoshi must find a yellow shell to do this. Since Yellow Yoshies and yellow shells are so rare, the stomping ability is rare. In fact, I've never used it once at all when playing the game."}
 
                                {:name "Bypassing Switches"
                                 :thumb "img/flying-yoshi.png"
@@ -231,7 +231,7 @@
                                 :video-src "video/flying-yoshi-leads-to-secret-exit"
                                 :width 256
                                 :height 224
-                                :description "Yoshi can often be used to get to secrets, even if the normal conditions for the secret aren't present. Here the player should have activated the red switch to get up into the secret area, but a flying Yoshi also does the trick."}
+                                :description "Yoshi can often be used to get to secrets, even if the normal conditions for the secret aren't present. Here the player should have activated the red switch to get up into the secret area, but a flying Yoshi also does the trick. We'll talk about switches more later in this review."}
                                ]})
 
 

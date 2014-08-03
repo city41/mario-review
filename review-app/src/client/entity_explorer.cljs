@@ -39,7 +39,7 @@
     [:div.entity-explorer.clickable {:on-click click-fn
                                      :on-touch-end click-fn}
      (map (fn [e] [:img.entity-explorer-header {:src (:thumb e)}]) (take 4 entities))
-     (str " ... click to explore more " plural-type-name)
+     (str " click to explore more " plural-type-name)
      [:div.clickable.hud-explorer-toggle-tray
       [:i.fa.fa-caret-down]]]))
 

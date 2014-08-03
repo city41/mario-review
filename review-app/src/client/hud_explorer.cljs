@@ -79,7 +79,7 @@
                (if open
                  [:div (build-items hud-items owner)]
                  [:div.hud-explorer-closed
-                  "click to explore the heads up display ..."]  )
+                  "click to explore the heads up display"]  )
 
                (if open
                  [:div.clickable.hud-explorer-toggle-tray {:on-click click-fn
