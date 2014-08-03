@@ -40,9 +40,8 @@
      :width (percent 100)
      :font-family "sans-serif"}]
 
-    [:body:before
-     {:content "\"\""
-      :position "fixed"
+    [:#background-hook
+     {:position "fixed"
       :top 0
       :left 0
       :bottom 0

@@ -42,17 +42,16 @@ html, body {
   margin: 0;
 }
 
-body:before {
-  right: 0;
-  top: 0;
-  position: fixed;
-  z-index: -1;
-  content: "";
-  background-size: cover;
-  bottom: 0;
-  background-image: url(../img/first-level-bg.png);
-  opacity: 0.3;
+#background-hook {
   left: 0;
+  background-size: cover;
+  position: fixed;
+  right: 0;
+  opacity: 0.3;
+  z-index: -1;
+  background-image: url(../img/first-level-bg.png);
+  top: 0;
+  bottom: 0;
   filter: blur(8px);
   -webkit-filter: blur(8px);
   -moz-filter: blur(8px);
