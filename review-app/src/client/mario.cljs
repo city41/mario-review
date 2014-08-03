@@ -172,7 +172,6 @@
                          
                          {:name "Blue Koopa Kick!"
                           :thumb "img/blue-koopa-kick.png"
-                          :flipped true
                           :video-src "video/blue-koopa-kick"
                           :width 264
                           :height 204
@@ -180,7 +179,6 @@
                          
                          {:name "Mask Koopas"
                           :thumb "img/mask-koopa.png"
-                          :flipped true
                           :video-src "video/mask-koopas"
                           :width 344
                           :height 208
