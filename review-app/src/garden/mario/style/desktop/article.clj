@@ -53,6 +53,14 @@
      ^:prefix {:transform "scale(1.2)"
                :filter "blur(8px)"}]
 
+    [:.trouble
+     {:background-color "#FFe8e8"
+      :color "#FFa8a8"
+      :font-size (em 0.7)
+      :font-style "italic"
+      :padding (px 8)
+      :margin-top (px 8)}]
+    
    [:button:focus :button:active :a:focus :a:active
     {:outline "none !important"}]
 

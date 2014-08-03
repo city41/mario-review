@@ -27,13 +27,12 @@
      (build-rows levels owner 0)))
 
 (defn build-active-level [owner {:keys [level video-src name description]}]
-  (let [click-fn (fn [] (om/set-state! owner :active-index nil))]
-    [:div.level-explorer-active-level.clearfix {:on-click click-fn}
-     [:div.level-explorer-active-level-video
-      (om/build avideo/cmp {:video-src video-src :active true :width 256 :height 224})]
-     [:div.level-explorer-active-level-body
-      [:h2 name]
-      [:div description]]]))
+  [:div.level-explorer-active-level.clearfix 
+   [:div.level-explorer-active-level-video
+    (om/build avideo/cmp {:video-src video-src :active true :width 256 :height 224})]
+   [:div.level-explorer-active-level-body 
+    [:h2 name]
+    [:div description]]])
 
 (defn build-instruction-header []
   [:div.level-explorer-instructions "Click on a level to see it in action"])
