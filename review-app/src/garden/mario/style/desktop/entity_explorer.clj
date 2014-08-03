@@ -43,7 +43,7 @@
       ^:prefix {:transform "scaleX(-1)"}]]]
    
    [:.entity-explorer-header
-    {:margin [(px 4) (px 6)]}]
+    {:margin [[0 (px 4)]]}]
 
    [:.entity-explorer-instructions
     {:text-align "center"

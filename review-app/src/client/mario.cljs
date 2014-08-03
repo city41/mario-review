@@ -39,19 +39,19 @@
                         :height 328
                         :description "A unique item to Super Mario World, it grants Mario with the yellow cape giving him a limited ability to fly and hover."}
                        
-                       {:name "Yoshi"
-                        :thumb "img/yoshi.png"
-                        :video-src "video/yoshi-eat-spit-fire"
-                        :width 190
-                        :height 134
-                        :description "Yoshi has proven to be a very popular addition to Super Mario World. He is one of the most important aspects of Super Mario World; he makes the game more interesting and more fun. He's so important, a whole section is dedicated to him later on in this article."}
-                       
                        {:name "P-Block"
                         :thumb "img/p-block.png"
                         :video-src "video/p-block"
                         :width 228
                         :height 202
                         :description "Coins to blocks and blocks to coins. The P-Block has some other tricks up its sleeve as well, especially in Ghost Houses"}
+                       
+                       {:name "Yoshi"
+                        :thumb "img/yoshi.png"
+                        :video-src "video/yoshi-eat-spit-fire"
+                        :width 190
+                        :height 134
+                        :description "Yoshi has proven to be a very popular addition to Super Mario World. He is one of the most important aspects of Super Mario World; he makes the game more interesting and more fun. He's so important, a whole section is dedicated to him later on in this article."}
                        
                        {:name "Silver P-Block"
                         :thumb "img/silver-pblock-item.png"
