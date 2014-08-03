@@ -58,6 +58,9 @@
 
 (defn cmp [app owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "hud-explorer::cmp")
+    
     om/IInitState
     (init-state [_]
       {:open false

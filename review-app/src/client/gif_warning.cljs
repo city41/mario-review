@@ -6,7 +6,7 @@
 (defn user-should-see-warning []
   (.mustUseGifs js/window))
 
-(defn reveal [owner target-id kick-off-vid-id]
+(defn reveal [owner]
   (let [target (.getElementById js/document "main-content")]
     (om/set-state! owner :show-warning false)
     (gclasses/add target "fade-in")))
@@ -16,6 +16,9 @@
 
 (defn cmp [app owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "gif-warning::cmp")
+
     om/IInitState
     (init-state [_]
       {:show-warning (user-should-see-warning)})

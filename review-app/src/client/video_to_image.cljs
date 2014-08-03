@@ -8,11 +8,20 @@
   (:import [goog.events EventType]))
 
 (defn img-cmp [{:keys [img-src]} owner]
-  (html [:div.video-to-image-container
-         [:img {:src img-src}]]))
+  (reify
+    om/IDisplayName
+    (display-name [_] "video_to_image::img-cmp")
+    
+    om/IRender
+    (render [_]
+      (html [:div.video-to-image-container
+             [:img {:src img-src}]]))))
 
 (defn video-cmp [{:keys [video-src img-src width height transition pre-delay post-delay]} owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "video-to-image::video-cmp")
+    
     om/IInitState
     (init-state [_]
       {:transition false})
@@ -38,6 +47,9 @@
 
 (defn root [app owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "video_to_image::root")
+    
     om/IRender
     (render [_]
       (let [cmp (if (.mustUseGifs js/window) img-cmp video-cmp)]

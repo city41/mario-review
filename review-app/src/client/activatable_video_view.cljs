@@ -49,6 +49,9 @@
 
 (defn cmp [{:keys [video-src active width height]} owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "activatable-video-view::cmp")
+    
     om/IInitState
     (init-state [_]
       {:played-once false})

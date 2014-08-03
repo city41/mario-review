@@ -57,6 +57,9 @@
 
 (defn cmp [{:keys [levels]} owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "level-explorer::cmp")
+    
     om/IInitState
     (init-state [_]
       {:active-index nil

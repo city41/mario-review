@@ -62,6 +62,9 @@
 
 (defn cmp [{:keys [entities type-name plural]} owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "entity-explorer::cmp")
+    
     om/IInitState
     (init-state [_]
       {:active-index 0

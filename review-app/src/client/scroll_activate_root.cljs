@@ -19,6 +19,9 @@
 (defn get-root [cmp]
   (fn [app owner]
     (reify
+      om/IDisplayName
+      (display-name [_] "scroll-activate-root")
+      
       om/IWillMount
       (will-mount [_]
         (let [mouse-chan

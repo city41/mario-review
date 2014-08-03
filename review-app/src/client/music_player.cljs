@@ -37,6 +37,9 @@
 
 (defn cmp [{:keys [songs] :as app} owner]
   (reify
+    om/IDisplayName
+    (display-name [_] "music-player::cmp")
+    
     om/IInitState
     (init-state [_]
       {:minimized true
