@@ -43,6 +43,10 @@
       (assoc attrs :width w :height h)
       attrs)))
 
+(defn hook [owner]
+  (when-let [v (get-video owner)]
+    (.addEventListener v "ended" #(om/set-state! owner :played-once true))))
+
 (defn cmp [{:keys [video-src active width height]} owner]
   (reify
     om/IInitState
@@ -51,21 +55,22 @@
 
     om/IDidMount
     (did-mount [_]
-      (when-let [v (get-video owner)]
-        (.addEventListener v "ended" #(om/set-state! owner :played-once true))))
+      (hook owner))
     
     om/IWillUpdate
     (will-update [_ {:keys [video-src active]} _]
       (let [prev-active (:active (om/get-props owner))
             prev-src (:video-src (om/get-props owner))]
-        (when (not= prev-src video-src) (om/set-state! owner :played-once false))
+        (when (not= prev-src video-src)
+          (om/set-state! owner :played-once false)
+          (.setTimeout js/window #(hook owner) 5))
         (when (and (not prev-active) active)
           (play-video owner))))
 
     
     om/IRenderState
     (render-state [_ {:keys [played-once] :as state}]
-      (html [:div.activatable-video-view
+      (html [:div.activatable-video-view 
              [:div.activatable-video-container {:ref "container"}
               (if (.mustUseGifs js/window)
                 [:img (get-img-attrs video-src width height)]
