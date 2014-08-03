@@ -154,16 +154,7 @@
 ;; KOOPAS
 (def koopas {:type-name "koopa"
               :plural "koopas"
-              :entities [
-
-                         {:name "Climbing Koopas"
-                          :thumb "img/koopa-on-fence.png"
-                          :video-src "video/koopas-on-fence"
-                          :width 312
-                          :height 184
-                          :description "In many of the castles Koopas can be seen climbing around on fences. Mario can get on the opposite side of the fence and punch them off."}
-
-                         {:name "Flying Koopas"
+              :entities [{:name "Flying Koopas"
                           :thumb "img/flying-koopa.png"
                           :flipped true
                           :video-src "video/flying-koopas"
@@ -171,28 +162,36 @@
                           :height 296
                           :description "These guys can be a real pain later in the game, but the flashing red ones give you a feather!"}
                          
-                         {:name "Koopa Troopa"
-                          :thumb "img/koopa.png"
+                         {:name "Kamikaze Koopas"
+                          :thumb "img/kamikaze-koopa.png"
                           :flipped true
-                          :video-src "video/koopa-troopas"
-                          :width 316
-                          :height 236
-                          :description "Probably the most common enemy in the game and in the Mario series as a whole. Koopa Troopas have really grown in variety and personality in Super Mario World. So much so we gave them their own section below."}
-                         {:name "Dino-Rhino"
-                          :thumb "img/dino-rhino.png"
-                          :flipped true
-                          :video-src "video/dino-rhino"
-                          :width 280
-                          :height 240
-                          :description "Dino-Rhino is lumbering and pretty dumb. But once you stomp on him, he turns into the faster and more deadly Dino-Torch."}
+                          :video-src "video/kamikaze-koopa"
+                          :width 320
+                          :height 188
+                          :description "A beached yellow Koopa who re-enters a shell will become kamikaze. These suckers are hard to deal with, but a spin jump takes them out."}
                          
-                         {:name "Galoomba"
-                          :thumb "img/galoomba.png"
+                         {:name "Blue Koopa Kick!"
+                          :thumb "img/blue-koopa-kick.png"
                           :flipped true
-                          :video-src "video/galoombas"
+                          :video-src "video/blue-koopa-kick"
+                          :width 264
+                          :height 204
+                          :description "If a blue koopa loses his shell, he will kick any shells he comes across. This guy can be a real bastard in later levels."}
+                         
+                         {:name "Mask Koopas"
+                          :thumb "img/mask-koopa.png"
+                          :flipped true
+                          :video-src "video/mask-koopas"
                           :width 344
                           :height 208
-                          :description "These odd round balls are the Goombas of Super Mario World. The name \"Galoomba\" came later to distinguish them from regular Goombas. They have a Koopa-esque quality where Mario can pick them up, but they don't slide along the ground like koopa shells."} 
+                          :description "Once you have beaten Special World, all koopas in the game become Mask Koopas. Instead of normal shells they wear Mario masks. Other enemies change too, but the Mask Koopa is the most prominent one."}
+
+                         {:name "Climbing Koopas"
+                          :thumb "img/koopa-on-fence.png"
+                          :video-src "video/koopas-on-fence"
+                          :width 312
+                          :height 184
+                          :description "In many of the castles Koopas can be seen climbing around on fences. Mario can get on the opposite side of the fence and punch them off."}
                          ]})
 
 ;; YOSHI TACTICS
