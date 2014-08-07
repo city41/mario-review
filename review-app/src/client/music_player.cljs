@@ -13,8 +13,7 @@
                        (om/set-state! owner :first-play false))
                      (om/set-state! owner :active-index (if active nil index))))]
     [:div.music-player-song-entry {:class (str "clickable" (when active " active-song"))
-                                   :on-click #(when-not (util/must-use-gifs) (click-fn))
-                                   :on-touch-end click-fn}
+                                   :on-click #(click-fn)}
      [:img {:src thumb-src :title name}]]))
 
 (defn build-controls [owner songs active-index name minimized]
