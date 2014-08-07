@@ -3,7 +3,7 @@
   (:require [goog.events :as events]
             [cljs.core.async :as async :refer [>! <! put! chan]]
             [om.core :as om :include-macros true]
-            [mario.activatable-video-view :as avideo]
+            [mario.activatable-html5-video-view :as avideo]
             [mario.util :as util]
             [sablono.core :as html :refer-macros [html]])
   (:import [goog.events EventType]))
