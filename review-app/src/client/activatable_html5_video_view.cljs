@@ -56,7 +56,7 @@
             prev-src (:video-src (om/get-props owner))]
         (when (not= prev-src video-src)
           (om/set-state! owner :played-once false)
-          (.setTimeout js/window #(hook owner) 5))
+          (js/setTimeout #(hook owner) 5))
         (when (and (not prev-active) active)
           (play-video owner))))
 

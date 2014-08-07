@@ -22,11 +22,17 @@
 
   :source-paths ["src" "src/garden"]
 
-  :garden {:builds [{:id "desktop"
+  :garden {:builds [{:id "prod"
                      :stylesheet mario.style.desktop.main/stylesheet
                      :compiler {
-                                :vendors ["webkit" "moz" "o" "ie"]
-                                :output-to "public/css/mario-desktop.css"
+                                :vendors ["webkit" "moz" "o" "ms"]
+                                :output-to "public/css/mario.css"
+                                :pretty-print? false}}
+                    {:id "desktop"
+                     :stylesheet mario.style.desktop.main/stylesheet
+                     :compiler {
+                                :vendors ["webkit" "moz" "o" "ms"]
+                                :output-to "public/css/mario.css"
                                 :prety-print? true}}]}
   
   :cljsbuild {

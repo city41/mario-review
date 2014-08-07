@@ -8,7 +8,7 @@
   (apply at-media {:max-width (px 768)} args))
 
 (defn phone-vertical [& args]
-  (apply at-media {:max-width (px 320)} args))
+  (apply at-media {:max-width (px 480)} args))
 
 (defn export []
   [[:.show-xsv

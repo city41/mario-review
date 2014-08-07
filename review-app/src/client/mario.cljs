@@ -9,6 +9,7 @@
             [mario.hud-explorer :as hud-explorer]
             [mario.level-explorer :as level-explorer]
             [mario.music-player :as music-player]
+            [mario.trouble-with-videos :as trouble-with-videos]
             [mario.gif-warning :as gif-warning]))
 
 (enable-console-print!)
@@ -388,3 +389,5 @@
 (om/root level-explorer/cmp levels (get-target "level-explorer-hook"))
 
 (om/root music-player/cmp music (get-target "music-player-hook"))
+
+(om/root trouble-with-videos/cmp {} (get-target "trouble-with-videos-hook"))

@@ -2,6 +2,7 @@
   (:require [mario.style.desktop.article :as article]
             [mario.style.desktop.media-util :as media-util]
             [mario.style.desktop.activatable-video-view :as activatable-video-view]
+            [mario.style.desktop.activatable-animated-gif-view :as activatable-animated-gif-view]
             [mario.style.desktop.gif-warning :as gif-warning]
             [mario.style.desktop.entity-explorer :as entity-explorer]
             [mario.style.desktop.video-to-image :as video-to-image]
@@ -17,6 +18,7 @@
   (gif-warning/export)
   (video-to-image/export)
   (activatable-video-view/export)
+  (activatable-animated-gif-view/export)
   (hud-explorer/export)
   (music-player/export)
   (level-explorer/export)

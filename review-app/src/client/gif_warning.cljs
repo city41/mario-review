@@ -35,7 +35,6 @@
              [:div.gif-warning-text
               [:h2 "Hey!!"]
               [:p "You're about to experience the animated gif version of the review, probably because you're on a phone"]
-              [:p "This version takes a TON of bandwidth and can crash mobile browers"]
-              [:p "You're better off using a desktop machine if you can"]]
+              [:p "This version uses a TON of bandwidth and can load slowly, desktop computers give a better experience"]]
              [:div.gif-warning-button-container
-              [:button {:on-click #(reveal owner)} "I'm Going In!"]]]))))
+              [:button {:on-click #(reveal owner)} "Got it"]]]))))

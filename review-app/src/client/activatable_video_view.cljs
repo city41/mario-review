@@ -7,12 +7,6 @@
             [mario.util :as util]
             [mario.scroll-activate-root :as scroll-activate-root]))
 
-(defn get-img-attrs [src w h]
-  (let [attrs {:key src
-               :src (str src ".gif")}]
-    (if (and w h)
-      (assoc attrs :width w :height h)
-      attrs)))
 
 (defn cmp [{:keys [video-src active width height] :as app} owner]
   (reify
@@ -22,7 +16,7 @@
     om/IRender
     (render [_]
       (html [:div.activatable-video-view 
-             [:div.activatable-video-container 
+             [:div.activatable-video-container
               (if (util/must-use-gifs)
                 (om/build agif/cmp app)
                 (om/build avideo/cmp app))]]))))
