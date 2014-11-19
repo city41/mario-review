@@ -31,21 +31,21 @@
                         :video-src "video/fire-flower"
                         :width 164
                         :height 264
-                        :description "Another classic item. The Fire Flower doesn't play as prominant of a role in the game as in the past, as the feather is usually a better choice."}
+                        :description "Another classic item. The Fire Flower isn't as prominent as in previous games, as the feather is usually a better choice."}
 
                        {:name "Feather"
                         :thumb "img/feather.png"
                         :video-src "video/feather"
                         :width 188
                         :height 328
-                        :description "A unique item to Super Mario World that never made a return to any other game, it grants Mario with the yellow cape giving Mario a limited ability to fly and hover."}
+                        :description "A unique item to Super Mario World that never made a return to any other game, it grants Mario the yellow cape, giving him a limited ability to hover and fly."}
                        
                        {:name "P-Block"
                         :thumb "img/p-block.png"
                         :video-src "video/p-block"
                         :width 228
                         :height 202
-                        :description "Coins to blocks and blocks to coins. The P-Block has some other tricks up its sleeve as well, especially in Ghost Houses"}
+                        :description "Coins to blocks and blocks to coins. The P-Block has some other tricks up its sleeve as well, especially in Ghost Houses."}
                        
                        {:name "Yoshi"
                         :thumb "img/yoshi.png"
