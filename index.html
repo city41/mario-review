@@ -9,9 +9,7 @@
     <!-- Twitter -->
     <meta name="twitter:title" content="A mega Super Mario World review" />
     <meta name="twitter:card" content="A detailed review of Super Mario World for the Super Nintendo" />
-    <meta name="twitter:site" content="@cityfortyone" />
     <meta name="twitter:description" content="A detailed review of Super Mario World for the Super Nintendo" />
-    <meta name="twitter:creator" content="@cityfortyone" />
     <meta name="twitter:image" content="img/overworld.png" />
 
     <!-- Open Graph (Facebook) -->
@@ -24,6 +22,11 @@
     <meta itemprop="name" content="A mega Super Mario World review">
     <meta itemprop="description" content="A detailed review of Super Mario World for the Super Nintendo">
     <meta itemprop="image" content="img/overworld.png">
+
+    <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("72356108b591ea3469f972b4461e765f");</script><!-- end Mixpanel -->
+    <script>mixpanel.track('visit')</script>
 
   </head>
   <body>
@@ -43,7 +46,9 @@
           </div>
           <div class="game-stat dev-stat">
             <i class="fa fa-github"></i><a href="https://github.com/city41/mario-review">github</a>
-            <i class="fa fa-twitter"></i><a href="http://twitter.com/cityfortyone">twitter</a>
+          </div>
+          <div class="game-stat dev-stat" style="margin-top: 8px">
+            <i class="fa fa-twitter"></i><a href="https://twitter.com/mattegreer">@mattegreer</a>
           </div>
         </div>
       </div>
@@ -484,20 +489,12 @@
             <p>
               Before going I want to thank Timby over at <a href="http://www.mariomayhem.com">Mario Mayhem</a> for letting me use his music files. Also thanks to Bryan for his input, and my wife Sarah for putting up with the creation of this monster. I also want to thank GitHub for hosting this monster :)
             </p>
-            <p>I would love any feedback you have on this, positive or negative. I would especially love to know about any errors that may have crept in so we can fix them. You can tweet at me at <a href="http://twitter.com/cityfortyone">cityfortyone</a>, or feel free to drop me an email at <a href="mailto:matt.e.greer@gmail.com">matt.e.greer@gmail.com</a>.
-            </p>
-            <p>
-              Also check out my other ongoing project, <a href="https://metamorf.us">Metamorfus</a>, a site about improving social skills. It has nothing to do with gaming, but I feel I need to plug it :)
-            </p>
             <div class="center">
               <img src="img/bye.png" width="260" height="316" alt="good bye" />
               <p>See you next time!</p>
             </div>
       </div>
     </article>
-    <script src="/js/react-0.9.0.js"></script>
-    <script src="/js/dev/goog/base.js"></script>
-    <script src="/js/mario.js"></script>
-    <script>goog.require("mario.mario");</script>
+    <script src="js/mario.min.js"></script>
   </body>
 </html>

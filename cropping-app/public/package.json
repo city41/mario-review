@@ -1,9 +1,0 @@
-{
-    "name": "Daisy",
-    "version": "0.1.0",
-    "main": "daisy_atom.js",
-    "dependencies": {
-        "rimraf": "2.2.8",
-        "mkdirp": "0.5.0"
-    }
-}
