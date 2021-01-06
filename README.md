@@ -8,7 +8,7 @@ This directory contains an Atom Shell based app (named Daisy) that manipulates S
 ![daisy](https://raw.githubusercontent.com/city41/mario-review/master/daisy.png)
 
 ## review-app
-This directory contains the actual review. The live version is at [http://www.mattgreer.org/super-mario-world](http://www.mattgreer.org/super-mario-world). The review is also built with ClojureScript and Om, along with [Garden](https://github.com/noprompt/garden).
+This directory contains the actual review. The live version is at https://supermarioworld.rocks. The review is also built with ClojureScript and Om, along with [Garden](https://github.com/noprompt/garden).
 
 ![review](https://raw.githubusercontent.com/city41/mario-review/master/screenshot.png)
 
